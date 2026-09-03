@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samrat Drug Agency — ethical pharmaceutical distribution, medicine enquiries, research information and order requests." />
+  <title>Samrat Drug Agency | Ethical Pharmaceutical Distribution</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Samrat Drug Agency home">
+      <div class="logo-mark" aria-hidden="true">
+        <span class="logo-cross">+</span>
+        <span class="logo-pulse"></span>
+      </div>
+      <div>
+        <strong>Samrat</strong>
+        <small>DRUG AGENCY</small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Medicine Portfolio</a>
+      <a href="#research">Research</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#order">Order / Enquiry</a>
+      <a href="faq-chat.html">Help Desk</a>
+      <button class="nav-cta" id="openInquiry">Send Enquiry</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">ETHICAL PHARMA DISTRIBUTION • GORAKHPUR</div>
+        <h1>Trusted access to <span>quality medicines</span> and pharmaceutical information.</h1>
+        <p>Samrat Drug Agency supports pharmacies, hospitals, healthcare professionals and institutional buyers with medicine distribution, product information, research references and enquiry-based order coordination.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#portfolio">Explore Portfolio</a>
+          <button class="btn secondary" id="openInquiry2">Rate / Product Enquiry</button>
+        </div>
+        <div class="trust-row">
+          <span>✓ Ethical medicine focus</span>
+          <span>✓ Distribution enquiries</span>
+          <span>✓ Research references</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="medical-orbit">
+          <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+          <div class="molecule">✚</div>
+          <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+        </div>
+        <h3>Samrat Pharma Desk</h3>
+        <p>Product • Price • Availability • Research • Order Request</p>
+        <a class="btn dark" href="faq-chat.html">Open Help Desk</a>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>01</strong><span>Product catalogue</span></div>
+      <div><strong>02</strong><span>Research & references</span></div>
+      <div><strong>03</strong><span>Compliance information</span></div>
+      <div><strong>04</strong><span>Order / rate enquiry</span></div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">MEDICINE PORTFOLIO</div>
+          <h2>India & International ethical medicine reference list</h2>
+        </div>
+        <input id="medicineSearch" class="search" placeholder="Search brand, molecule, manufacturer..." />
+      </div>
+      <p class="section-note">Reference catalogue only. Availability, price, licence status and supply eligibility must be confirmed with Samrat Drug Agency before any transaction. Prescription medicines are supplied only through legally permitted channels.</p>
+      <div class="medicine-grid" id="medicineGrid"></div>
+    </section>
+
+    <section class="section soft" id="research">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">RESEARCH DESK</div>
+          <h2>Medicine research at a glance</h2>
+        </div>
+        <span class="badge">Reference-first approach</span>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <div class="icon">⌁</div><h3>Active ingredient</h3>
+          <p>Review the generic name, strength, dosage form and therapeutic class before discussing a product.</p>
+        </article>
+        <article class="research-card">
+          <div class="icon">◈</div><h3>Evidence & approval</h3>
+          <p>Use regulator and manufacturer sources for approval status, indications, warnings and product information.</p>
+        </article>
+        <article class="research-card">
+          <div class="icon">▣</div><h3>Quality documents</h3>
+          <p>For business enquiries, request applicable manufacturer documents such as COA, GMP or product certificates where available.</p>
+        </article>
+        <article class="research-card">
+          <div class="icon">⚕</div><h3>Responsible use</h3>
+          <p>This website does not diagnose, prescribe or replace advice from a qualified healthcare professional.</p>
+        </article>
+      </div>
+
+      <div class="research-panel">
+        <div>
+          <span class="eyebrow">REGULATORY REFERENCE</span>
+          <h3>Check official drug information before relying on a claim.</h3>
+          <p>India's CDSCO publishes approved drug information and regulatory notifications. The website can link buyers to those official references rather than presenting unverified claims as certification.</p>
+        </div>
+        <a class="btn primary" href="https://cdscoonline.gov.in/CDSCO/cdscoDrugs" target="_blank" rel="noopener">Open CDSCO Drug Search ↗</a>
+      </div>
+    </section>
+
+    <section class="section" id="compliance">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">COMPLIANCE & CERTIFICATION</div>
+          <h2>Documents that can be displayed and verified</h2>
+        </div>
+      </div>
+      <div class="compliance-grid">
+        <div class="compliance-card"><span>01</span><h3>Drug Distribution Licence</h3><p>Upload/display the firm's valid licence details here after verification.</p><button class="outline-btn" data-doc="Drug Distribution Licence" data-pdf="documents/gmp-certificate.pdf"> </button>> </button></div>
+        <div class="compliance-card"><span>02</span><h3>GST Registration</h3><p>Add the firm's GST certificate/reference after verification.</p><button class="outline-btn" data-doc="GST Registration Certificate">View document</button></div>
+        <div class="compliance-card"><span>03</span><h3>Manufacturer GMP / Quality</h3><p>Product-specific manufacturer certificates can be linked to relevant portfolio entries.</p><button class="outline-btn" data-doc="Manufacturer Quality Certificate">View document</button></div>
+        <div class="compliance-card"><span>04</span><h3>Product COA / Batch Documents</h3><p>Provide batch-specific documents where legitimately available and appropriate.</p><button class="outline-btn" data-doc="Product COA / Batch Document">View document</button></div>
+      </div>
+      <div class="warning">
+        <strong>Important:</strong> Do not label a document, product or company as “CDSCO approved”, “WHO certified”, “GMP certified” or equivalent unless the exact document/status has been independently verified. Replace the demo document buttons with your genuine certificates.
+      </div>
+    </section>
+
+    <section class="section order-section" id="order">
+      <div class="order-copy">
+        <div class="eyebrow">ORDER / RATE ENQUIRY</div>
+        <h2>Need a medicine, rate or availability?</h2>
+        <p>Send product name, strength, quantity and buyer details. For prescription-controlled products, upload/request the required prescription or licence documentation through the legally appropriate process.</p>
+        <div class="contact-box">
+          <div><span>Call</span><a href="tel:9140408078">9140408078</a> / <a href="tel:9795000018">9795000018</a></div>
+          <div><span>Proprietor</span>Amarendra Sharma</div>
+          <div><span>Location</span>Rapti Nagar Phase 4, Chargwan, Gorakhpur — 273013</div>
+        </div>
+      </div>
+      <form class="order-form" id="orderForm">
+        <label>Customer / Organisation name<input name="customer" required /></label>
+        <label>Mobile / WhatsApp<input name="phone" required /></label>
+        <label>Medicine / Brand name<input name="medicine" required /></label>
+        <div class="two-col">
+          <label>Strength<input name="strength" placeholder="e.g. 500 mg" /></label>
+          <label>Quantity<input name="quantity" placeholder="e.g. 100 strips" /></label>
+        </div>
+        <label>Enquiry type
+          <select name="type">
+            <option>Rate enquiry</option><option>Availability enquiry</option><option>Order request</option><option>Product research</option><option>Institutional supply</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" placeholder="Add required details..."></textarea></label>
+        <button class="btn primary full" type="submit">Send on WhatsApp</button>
+        <p class="form-help">This demo sends the enquiry to WhatsApp. A production website can connect this form to a secure order-management backend.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="logo-mark small"><span class="logo-cross">+</span><span class="logo-pulse"></span></div>
+      <div><strong>Samrat Drug Agency</strong><small>Ethical Pharmaceutical Distribution</small></div>
+    </div>
+    <p>© 2026 Samrat Drug Agency. All rights reserved.</p>
+    <div class="footer-links"><a href="#research">Research</a><a href="#compliance">Compliance</a><a href="#order">Enquiry</a></div>
+  </footer>
+
+  <div class="modal" id="inquiryModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" data-close>×</button>
+      <div class="eyebrow">QUICK ENQUIRY</div>
+      <h2>Ask about a medicine</h2>
+      <p>For rate, availability, research or order coordination.</p>
+      <form id="quickForm">
+        <label>Your name<input name="name" required /></label>
+        <label>Mobile / WhatsApp<input name="phone" required /></label>
+        <label>Product / brand<input name="product" required /></label>
+        <label>Message<textarea name="message" rows="4" placeholder="Tell us what you need..."></textarea></label>
+        <button class="btn primary full" type="submit">Send Enquiry on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="infoModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" data-close>×</button>
+      <div class="eyebrow">DOCUMENT PLACEHOLDER</div>
+      <h2 id="infoTitle">Document</h2>
+      <p>This demo page does not contain a genuine certificate. Replace this panel with your verified document PDF/image and the relevant issue/expiry information before publishing.</p>
+      <button class="btn secondary" data-close>Close</button>
+    </div>
+  </div>
+
+  <a class="floating-wa" id="floatingWA" href="#" aria-label="WhatsApp">⌕</a>
+  <script src="script.js"></script>
+</body>
+</html>

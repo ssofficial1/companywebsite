@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samrat Drug Agency Help Desk — quick answers and organised WhatsApp enquiries." />
+  <title>Samrat Help Desk | Samrat Drug Agency</title>
+  <link rel="stylesheet" href="faq-chat.css" />
+</head>
+<body>
+  <header class="chat-header">
+    <a href="index.html" class="back-link">← Website</a>
+    <div class="brand-mini">
+      <div class="brand-icon">+</div>
+      <div><strong>Samrat Help Desk</strong><span>Samrat Drug Agency</span></div>
+    </div>
+    <a class="header-wa" href="https://wa.me/919140408078" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <main class="chat-shell">
+    <section class="chat-panel" aria-label="Samrat Help Desk">
+      <div class="panel-top">
+        <div>
+          <div class="eyebrow">CUSTOMER SUPPORT</div>
+          <h1>How can we help?</h1>
+          <p>Choose a question below for a quick answer. For a final rate, availability or order enquiry, send the organised enquiry to WhatsApp.</p>
+        </div>
+        <div class="online"><i></i> Quick Help</div>
+      </div>
+
+      <div class="chat-area" id="chatArea">
+        <div class="message bot">
+          <div class="avatar">S</div>
+          <div class="bubble"><strong>Samrat Assistant</strong><p>Namaste! 👋 Main Samrat Drug Agency ke basic business questions mein help kar sakta hoon. Neeche koi question select kijiye.</p></div>
+        </div>
+      </div>
+
+      <div class="faq-area">
+        <div class="faq-title">Frequently asked questions</div>
+        <div class="faq-grid" id="faqGrid"></div>
+      </div>
+
+      <div class="final-card">
+        <div>
+          <span class="final-badge">FINAL ENQUIRY</span>
+          <h2>Need a specific product, rate or availability?</h2>
+          <p>Fill in the details once. WhatsApp will open with a clean, organised message ready to send to Samrat Drug Agency.</p>
+        </div>
+        <button class="primary-btn" id="openEnquiry">Start WhatsApp Enquiry →</button>
+      </div>
+    </section>
+
+    <aside class="info-panel">
+      <div class="info-logo">+</div>
+      <div class="eyebrow">SAMRAT DRUG AGENCY</div>
+      <h2>Business Help Desk</h2>
+      <p>Pharmaceutical distribution enquiries, product information and order coordination.</p>
+
+      <div class="info-list">
+        <div><span>📍</span><p><b>Location</b><br>Rapti Nagar Phase 4, Chargwan, Gorakhpur — 273013</p></div>
+        <div><span>📞</span><p><b>Contact</b><br>9140408078 / 9795000018</p></div>
+        <div><span>👤</span><p><b>Proprietor</b><br>Amarendra Sharma</p></div>
+      </div>
+
+      <a class="call-btn" href="tel:9140408078">Call 9140408078</a>
+      <p class="note">Availability, price, licence status and supply eligibility must be confirmed before any transaction.</p>
+    </aside>
+  </main>
+
+  <div class="modal" id="enquiryModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="closeEnquiry" aria-label="Close">×</button>
+      <div class="eyebrow">WHATSAPP ENQUIRY</div>
+      <h2>Send an organised enquiry</h2>
+      <p class="modal-intro">Enter the details below. We will create the WhatsApp message for you automatically.</p>
+      <form id="enquiryForm">
+        <div class="two-col">
+          <label>Name<input name="name" required placeholder="Your name / organisation" /></label>
+          <label>Mobile<input name="phone" required placeholder="10-digit number" inputmode="numeric" /></label>
+        </div>
+        <label>Medicine / Product<input name="product" required placeholder="Brand or molecule name" /></label>
+        <div class="two-col">
+          <label>Strength<input name="strength" placeholder="e.g. 500 mg" /></label>
+          <label>Quantity<input name="quantity" placeholder="e.g. 100 strips" /></label>
+        </div>
+        <label>Enquiry type
+          <select name="type">
+            <option>Rate enquiry</option>
+            <option>Availability enquiry</option>
+            <option>Order request</option>
+            <option>Product information</option>
+            <option>Institutional supply</option>
+          </select>
+        </label>
+        <label>Additional message<textarea name="message" rows="4" placeholder="Any other requirement..."></textarea></label>
+        <button class="primary-btn full" type="submit">Open WhatsApp →</button>
+        <p class="secure-note">No account or extra app is required here. WhatsApp opens with your message; you remain in control of sending it.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="faq-chat.js"></script>
+</body>
+</html>
